@@ -3,7 +3,7 @@ const lcnData = {
   name: "Harry A. Fumera",
   issued: "Sept 03, 2023",
   expiration: "Sept 03, 2026",
-  registration: "Latest Registration Date",
+  registration: "Sept 03, 2023",
   FWE: "7",
   SJE: "13",
   EP: "8",
