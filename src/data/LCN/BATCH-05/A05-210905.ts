@@ -1,5 +1,5 @@
 const lcnData = {
-  lcn: "A05-210904",
+  lcn: "A05-210905",
   name: "Maria Carmen Inocencia E. Lapuz",
   issued: "Sept 12, 2021",
   expiration: "Sept 12, 2026",
