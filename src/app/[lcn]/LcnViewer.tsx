@@ -35,6 +35,13 @@ import ID12 from "@/assets/svg/License/12.svg";
 import ID13 from "@/assets/svg/License/13.svg";
 import ID14 from "@/assets/svg/License/14.svg";
 import ID15 from "@/assets/svg/License/15.svg";
+import ID16 from "@/assets/svg/License/16.svg";
+import ID17 from "@/assets/svg/License/17.svg";
+import ID18 from "@/assets/svg/License/18.svg";
+import ID19 from "@/assets/svg/License/19.svg";
+import ID20 from "@/assets/svg/License/20.svg";
+import ID21 from "@/assets/svg/License/21.svg";
+import ID22 from "@/assets/svg/License/22.svg";
 
 const licenseLayers = [
   ID0,
@@ -52,6 +59,13 @@ const licenseLayers = [
   ID12,
   ID13,
   ID14,
+  ID15,
+  ID16,
+  ID17,
+  ID18,
+  ID19,
+  ID20,
+  ID21,
 ];
 
 type LcnData = {
@@ -87,12 +101,12 @@ const DateExpiry: React.FC<SVGProps> = ({ SVGText }) => {
         fill="black"
         xmlSpace="preserve"
         style={{ whiteSpace: "pre" }}
-        fontFamily="Arial"
-        fontSize="96"
-        letterSpacing="0em"
+        fontFamily="Calibri"
+        fontSize="68"
+        letterSpacing="-0.012em"
       >
-        <tspan x="1698" y="1941.28">
-          {SVGText}
+        <tspan x="177.599" y="1691.5">
+          Valid Until: {SVGText}
         </tspan>
       </text>
     </svg>
@@ -105,18 +119,18 @@ const DateIssue: React.FC<SVGProps> = ({ SVGText }) => {
       viewBox="0 0 3450 2210"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`absolute top-0 left-0}`}
+      className={`absolute top-0 left-0`}
     >
       <text
         fill="black"
         xmlSpace="preserve"
         style={{ whiteSpace: "pre" }}
-        fontFamily="Arial"
-        fontSize="96"
-        letterSpacing="0em"
+        fontFamily="Calibri"
+        fontSize="68"
+        letterSpacing="-0.012em"
       >
-        <tspan x="1698" y="1638.28">
-          {SVGText}
+        <tspan x="158.583" y="1603.5">
+          Date Issued: {SVGText}
         </tspan>
       </text>
     </svg>
@@ -124,23 +138,24 @@ const DateIssue: React.FC<SVGProps> = ({ SVGText }) => {
 };
 
 const LCNNumber: React.FC<SVGProps> = ({ SVGText }) => {
+  const fontSize = SVGText.length > 10 ? 85 : SVGText.length > 7 ? 125 : 139;
   return (
     <svg
       viewBox="0 0 3450 2210"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`absolute top-0 left-0}`}
+      className={`absolute top-0 left-0`}
     >
       <text
         fill="black"
         xmlSpace="preserve"
         style={{ whiteSpace: "pre" }}
         fontFamily="Arial"
-        fontSize="96"
-	      fontWeight="900"
-        letterSpacing="0em"
+        fontSize={fontSize}
+        fontWeight="bold"
+        letterSpacing="0.012em"
       >
-        <tspan x="2497" y="1268.47">
+        <tspan x="174.79" y="1443.15">
           {SVGText}
         </tspan>
       </text>
@@ -150,24 +165,25 @@ const LCNNumber: React.FC<SVGProps> = ({ SVGText }) => {
 
 const EMTName: React.FC<SVGProps> = ({ SVGText }) => {
   // Determine font size based on text length
-  const fontSize =
-    SVGText.length > 28 ? 95 : SVGText.length > 21 ? 110 : 139;
+  const fontSize = SVGText.length > 28 ? 95 : SVGText.length > 21 ? 110 : 139;
 
   return (
     <svg
       viewBox="0 0 3450 2210"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute top-0 left-0"
+      className={`absolute top-0 left-0`}
     >
       <text
-        fill="white"
+        fill="black"
         xmlSpace="preserve"
-        style={{ whiteSpace: "pre", fontSize }}
+        style={{ whiteSpace: "pre" }}
         fontFamily="Arial"
+        fontSize={fontSize}
+        fontWeight="bold"
         letterSpacing="0em"
       >
-        <tspan x="1861" y="948.792">
+        <tspan x="1550" y="1080.89">
           {SVGText}
         </tspan>
       </text>
@@ -182,25 +198,31 @@ const EMTImage: React.FC<SVGProps> = ({ SVGText, Batch }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      className="absolute top-0 left-0"
+      className={`absolute top-0 left-0`}
     >
-      <rect x="335" y="543" width="997" height="997" fill="url(#pattern0_1_19)" />
+      <rect
+        x="1"
+        y="129"
+        width="1016"
+        height="1014"
+        fill="url(#pattern0_43_64)"
+      />
       <defs>
         <pattern
-          id="pattern0_1_19"
+          id="pattern0_43_64"
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
         >
           <use
-            xlinkHref="#image0_1_19"
-            transform="scale(0.00126582)"
+            xlinkHref="#image0_43_64"
+            transform="matrix(0.00390625 0 0 0.00391395 0 -0.000986193)"
           />
         </pattern>
         <image
-          id="image0_1_19"
-          width="790"
-          height="790"
+          id="image0_43_64"
+          width="256"
+          height="256"
           preserveAspectRatio="none"
           href={`/assets/img/ID/${Batch}/${SVGText}.png`}
         />
@@ -208,7 +230,6 @@ const EMTImage: React.FC<SVGProps> = ({ SVGText, Batch }) => {
     </svg>
   );
 };
-
 
 export default function LcnViewer({
   lcn,
@@ -274,7 +295,11 @@ export default function LcnViewer({
                     <DialogHeader>
                       <DialogTitle>Certificate</DialogTitle>
                       <DialogDescription>
-                        <Image src={Certificate} alt="Certificate" draggable={false}/>
+                        <Image
+                          src={Certificate}
+                          alt="Certificate"
+                          draggable={false}
+                        />
                       </DialogDescription>
                     </DialogHeader>
                   </DialogContent>
@@ -307,10 +332,10 @@ export default function LcnViewer({
                         <EMTName SVGText={lcnData.name} />
                         <EMTImage SVGText={lcnData.lcn} Batch={lcnData.batch} />
                         <Image
-                            src={ID15}
-                            alt={`Layer 15`}
-                            className={`absolute top-0 left-0`}
-                            />
+                          src={ID22}
+                          alt={`Layer 22`}
+                          className={`absolute top-0 left-0`}
+                        />
                       </DialogDescription>
                     </DialogHeader>
                   </DialogContent>
@@ -333,10 +358,9 @@ export default function LcnViewer({
                     lcnData.registration
                   })`}
                 />
-              <Field
-                label="Remarks"
-                value={
-                  (() => {
+                <Field
+                  label="Remarks"
+                  value={(() => {
                     const ranking = lcnData.ranking?.toUpperCase();
                     let content = null;
 
@@ -370,10 +394,8 @@ export default function LcnViewer({
                     }
 
                     return content;
-                  })()
-                }
-              />
-
+                  })()}
+                />
               </form>
 
               <div>
@@ -461,7 +483,7 @@ export default function LcnViewer({
   );
 }
 
-function Field({ label, value }: { label: string; value: React.ReactNode; }) {
+function Field({ label, value }: { label: string; value: React.ReactNode }) {
   return (
     <div>
       <label className="block text-[10px] font-semibold text-gray-600 mb-1">
