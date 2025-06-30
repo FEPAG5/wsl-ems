@@ -164,7 +164,7 @@ const LCNNumber: React.FC<SVGProps> = ({ SVGText }) => {
 };
 
 const EMTName: React.FC<SVGProps> = ({ SVGText }) => {
-  // Determine font size based on text length
+  const upperText = SVGText.toUpperCase();
   const fontSize = SVGText.length > 28 ? 95 : SVGText.length > 21 ? 110 : 139;
 
   return (
@@ -183,8 +183,8 @@ const EMTName: React.FC<SVGProps> = ({ SVGText }) => {
         fontWeight="bold"
         letterSpacing="0em"
       >
-        <tspan x="1550" y="1080.89">
-          {SVGText}
+        <tspan x="1425" y="1080.89">
+          {upperText}
         </tspan>
       </text>
     </svg>
@@ -245,7 +245,7 @@ export default function LcnViewer({
       <div className="flex flex-col items-center justify-center min-h-screen bg-white text-center px-4">
         <h1 className="text-xl font-bold text-red-600">License Expired</h1>
         <p className="mt-2 text-sm text-gray-600">
-          <strong>{lcnData.name}</strong> (#{lcn}) license expired on{" "}
+          <strong>{lcnData.name.toUpperCase()}</strong> (#{lcn}) license expired on{" "}
           <strong>{lcnData.expiration}</strong>.
         </p>
         <Button className="mt-6 w-full max-w-xs bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-2 rounded-md">
@@ -348,7 +348,7 @@ export default function LcnViewer({
                 Profile Information
               </h2>
               <form className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
-                <Field label="Legal Name" value={lcnData.name} />
+                <Field label="Legal Name" value={lcnData.name.toUpperCase()} />
                 <Field label="License Number" value={lcnData.lcn} />
                 <Field label="Date of Issuance" value={lcnData.issued} />
                 <Field label="Date of Expiration" value={lcnData.expiration} />
