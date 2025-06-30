@@ -3,7 +3,7 @@ const lcnData = {
   name: "Rhiza D. Generalao",
   issued: "August 03, 2024",
   expiration: "August 03, 2025",
-  registration: "",
+  registration: "Aug 03, 2024",
   FWE: "8.6",
   SJE: "11",
   EP: "8.5",
