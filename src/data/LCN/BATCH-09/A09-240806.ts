@@ -3,7 +3,7 @@ const lcnData = {
   name: "Gerald C. Glova",
   issued: "Aug 03,2024",
   expiration: "Augn 03, 2026",
-  registration: "Latest Registration Date",
+  registration: "Aug 03, 2024",
   FWE: "8.5",
   SJE: "11.2",
   EP: "5.2",
