@@ -3,7 +3,7 @@ const lcnData = {
   name: "Danilo T. Jaro",
   issued: "Sept 12, 2021",
   expiration: "Sept 12, 2026",
-  registration: "Latest Registration Date",
+  registration: "Sept 12, 2021",
   FWE: "00",
   SJE: "00",
   EP: "00",
