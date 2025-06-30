@@ -3,7 +3,7 @@ const lcnData = {
   name: "Christian Maria Ravino",
   issued: "Sept 03, 2023",
   expiration: "Sept 03, 2026",
-  registration: "Latest Registration Date",
+  registration: "Sept 03, 2023",
   FWE: "4",
   SJE: "11",
   EP: "7",
