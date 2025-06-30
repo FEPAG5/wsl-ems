@@ -1,9 +1,9 @@
 const lcnData = {
   lcn: "A09-240802",
   name: "JAY P. CAL",
-  issued: "August 04, 2024",
-  expiration: "August 04, 2026",
-  registration: "August 04, 2024",
+  issued: "August 03, 2024",
+  expiration: "August 03, 2026",
+  registration: "",
   FWE: "8.9",
   SJE: "11.5",
   EP: "7.5",
