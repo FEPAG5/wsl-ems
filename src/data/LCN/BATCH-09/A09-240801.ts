@@ -1,15 +1,15 @@
 const lcnData = {
-  lcn: "TEMPLATE-09",
+  lcn: "A09-240801",
   name: "Batch 09",
-  issued: "Issued Date",
+  issued: "Mathen E. Blanco",
   expiration: "Expiry Date",
   registration: "Latest Registration Date",
-  FWE: "10",
-  SJE: "00",
-  EP: "00",
-  PAS: "00",
-  CCST: "00",
-  CCSM: "00",
+  FWE: "8.5",
+  SJE: "11.5",
+  EP: "5.2",
+  PAS: "12.5",
+  CCST: "18",
+  CCSM: "24",
   batch: "BATCH-09",
   ranking: "0"
 }
