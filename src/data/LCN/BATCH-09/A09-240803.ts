@@ -3,7 +3,7 @@ const lcnData = {
   name: "Anna May L. Carina DMD",
   issued: "Aug 03, 2024",
   expiration: "Aug 03, 2026",
-  registration: "L",
+  registration: "Aug 03, 2024",
   FWE: "8.5",
   SJE: "11.5",
   EP: "4.9",
