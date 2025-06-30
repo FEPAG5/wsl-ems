@@ -3,7 +3,7 @@ const lcnData = {
   name: "Alvan Reuel L. Parico",
   issued: "Sept 03, 2023",
   expiration: "Sept 03, 2026",
-  registration: "Latest Registration Date",
+  registration: "Sept 03, 2023",
   FWE: "8.1",
   SJE: "12.8",
   EP: "9.4",
