@@ -1,8 +1,8 @@
 const lcnData = {
   lcn: "A09-240801",
-  name: "Batch 09",
-  issued: "Mathen E. Blanco",
-  expiration: "Expiry Date",
+  name: "Mathen E. Blanco",
+  issued: "Aug 03,2024",
+  expiration: "Augn 03, 2026",
   registration: "Latest Registration Date",
   FWE: "8.5",
   SJE: "11.5",
