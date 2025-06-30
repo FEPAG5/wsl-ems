@@ -3,7 +3,7 @@ const lcnData = {
   name: "JAY P. CAL",
   issued: "August 03, 2024",
   expiration: "August 03, 2026",
-  registration: "",
+  registration: "Aug 03, 2024",
   FWE: "8.9",
   SJE: "11.5",
   EP: "7.5",
