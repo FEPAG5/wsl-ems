@@ -314,7 +314,99 @@ const EMTCertName: React.FC<SVGProps> = ({ SVGText }) => {
 };
 
 
+const numberWords1to19 = [
+  "",
+  "One",
+  "Two",
+  "Three",
+  "Four",
+  "Five",
+  "Six",
+  "Seven",
+  "Eight",
+  "Nine",
+  "Ten",
+  "Eleven",
+  "Twelve",
+  "Thirteen",
+  "Fourteen",
+  "Fifteen",
+  "Sixteen",
+  "Seventeen",
+  "Eighteen",
+  "Nineteen"
+];
+
+const tensWords = [
+  "",
+  "", // 0, 1 unused
+  "Twenty",
+  "Thirty",
+  "Forty",
+  "Fifty",
+  "Sixty",
+  "Seventy",
+  "Eighty",
+  "Ninety"
+];
+
+const getYearInWords = (year: number): string => {
+  if (year >= 2000 && year < 2100) {
+    const lastTwo = year % 100;
+
+    if (lastTwo === 0) {
+      return "Two Thousand";
+    }
+
+    if (lastTwo < 20) {
+      return `Two Thousand ${numberWords1to19[lastTwo]}`;
+    }
+
+    const tens = Math.floor(lastTwo / 10);
+    const ones = lastTwo % 10;
+
+    const tensPart = tensWords[tens];
+    const onesPart = ones > 0 ? `-${numberWords1to19[ones]}` : "";
+
+    return `Two Thousand ${tensPart}${onesPart}`;
+  }
+
+  return year.toString();
+};
+
+const getDayWithSuffix = (day: number): string => {
+  if (day >= 11 && day <= 13) return `${day}th`;
+  const lastDigit = day % 10;
+  switch (lastDigit) {
+    case 1:
+      return `${day}st`;
+    case 2:
+      return `${day}nd`;
+    case 3:
+      return `${day}rd`;
+    default:
+      return `${day}th`;
+  }
+};
+
 const CertText: React.FC<SVGProps> = ({ SVGText }) => {
+  let formattedDate = SVGText;
+  let year = 0;
+
+  try {
+    const parsedDate = new Date(SVGText);
+    year = parsedDate.getFullYear();
+
+    const month = parsedDate.toLocaleString("default", { month: "long" });
+    const day = parsedDate.getDate();
+
+    formattedDate = `${getDayWithSuffix(day)} day of ${month}`;
+  } catch {
+    formattedDate = SVGText;
+  }
+
+  const yearInWords = getYearInWords(year);
+
   return (
     <svg
       viewBox="0 0 6900 5209"
@@ -329,12 +421,12 @@ const CertText: React.FC<SVGProps> = ({ SVGText }) => {
         fontFamily="Lucida Calligraphy"
         fontSize="68"
         fontWeight="bold"
-        fontStyle="italic" 
+        fontStyle="italic"
         letterSpacing="-0.006em"
-        textAnchor="middle"  // This centers each tspan on x position
+        textAnchor="middle"
       >
         <tspan x="3450" y="3548.17">
-          Awarded this {SVGText} in the year of our Lord Two Thousand Twenty-Five.
+          Awarded this {formattedDate} in the year of our Lord {yearInWords}.
         </tspan>
         <tspan x="3450" y="3628.17">
           Given at the ARMEDSAFE Safety &#38; Rescue Training Center,
