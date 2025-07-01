@@ -3,7 +3,7 @@ const lcnData = {
   name: "NEIL PATRICK C. ESCOTA",
   issued: "July 05, 2025",
   expiration: "July 05, 2026",
-  registration: "Latest Registration Date",
+  registration: "July 05, 2025",
   FWE: "8.2",
   SJE: "12.5",
   EP: "9.2",
