@@ -235,7 +235,7 @@ const EMTName: React.FC<SVGProps> = ({ SVGText }) => {
         letterSpacing="0em"
         textAnchor="middle"
       >
-        <tspan x="2200" y="1080.89">  {/* 1725 is center of 3450 width */}
+        <tspan x="2200" y="1080.89">
           {upperText}
         </tspan>
       </text>
