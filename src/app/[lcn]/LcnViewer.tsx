@@ -320,7 +320,7 @@ const CertText: React.FC<SVGProps> = ({ SVGText }) => {
       viewBox="0 0 6900 5209"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`absolute top-0 left-0`}
+      className="absolute top-0 left-0"
     >
       <text
         fill="black"
@@ -331,12 +331,22 @@ const CertText: React.FC<SVGProps> = ({ SVGText }) => {
         fontWeight="bold"
         fontStyle="italic" 
         letterSpacing="-0.006em"
+        textAnchor="middle"  // This centers each tspan on x position
       >
-        <tspan x="2190.08" y="3548.17">Awarded this {SVGText} in the year of our Lord Two Thousand Twenty-Five.&#10;</tspan><tspan x="2490.14" y="3628.17">Given at the ARMEDSAFE Safety &#38; Rescue Training Center,&#10;</tspan><tspan x="2353.61" y="3708.17">2A Wellgoco Bldg., Instruccion Street, Espana Avenue, Sampaloc Manila&#10;</tspan><tspan x="3434.92" y="3788.17">&#xa0;</tspan>
+        <tspan x="3450" y="3548.17">
+          Awarded this {SVGText} in the year of our Lord Two Thousand Twenty-Five.
+        </tspan>
+        <tspan x="3450" y="3628.17">
+          Given at the ARMEDSAFE Safety &#38; Rescue Training Center,
+        </tspan>
+        <tspan x="3450" y="3708.17">
+          2A Wellgoco Bldg., Instruccion Street, Espana Avenue, Sampaloc Manila
+        </tspan>
       </text>
     </svg>
   );
 };
+
 
 const LCNCertNumber: React.FC<SVGProps> = ({ SVGText }) => {
   return (
