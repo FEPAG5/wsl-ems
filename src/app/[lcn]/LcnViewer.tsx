@@ -429,12 +429,12 @@ export default function LcnViewer({
                       {[
                         ["10%", "Final Written Examination", lcnData.FWE],
                         [
-                          "20%",
+                          "15%",
                           "Situational Judgement Examination",
                           lcnData.SJE,
                         ],
                         ["10%", "Equipment Proficiency", lcnData.EP],
-                        ["10%", "Patient Assessment Skills", lcnData.PAS],
+                        ["15%", "Patient Assessment Skills", lcnData.PAS],
                         ["25%", "Critical Case: Trauma", lcnData.CCST],
                         ["25%", "Critical Case: Medical", lcnData.CCSM],
                       ].map(([weight, title, grade], idx) => (
