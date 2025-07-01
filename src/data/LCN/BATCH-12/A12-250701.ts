@@ -3,7 +3,7 @@ const lcnData = {
   name: "LEA MAY B. CORTEZ",
   issued: "July 05, 2025",
   expiration: "July 05, 2026",
-  registration: "Latest Registration Date",
+  registration: "July 05, 2025",
   FWE: "08",
   SJE: "12",
   EP: "9.4",
