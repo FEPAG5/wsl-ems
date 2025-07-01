@@ -282,6 +282,127 @@ const EMTImage: React.FC<SVGProps> = ({ SVGText, Batch }) => {
   );
 };
 
+const EMTCertName: React.FC<SVGProps> = ({ SVGText }) => {
+  const upperText = SVGText.toUpperCase();
+  const fontSize = SVGText.length > 28 ? 269 : SVGText.length > 21 ? 269 : 269;
+
+  return (
+    <svg 
+        viewBox="0 0 6900 5209" 
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className={`absolute top-0 left-0`}
+    >
+      <text
+        fill="black"
+        xmlSpace="preserve"
+        style={{ whiteSpace: "pre" }}
+        fontFamily="Copperplate Gothic Bold"
+        fontSize={fontSize}
+        fontWeight="bold"
+        letterSpacing="0em"
+      >
+        <tspan x="1848" y="2252.03">
+          {upperText}
+        </tspan>
+      </text>
+    </svg>
+  );
+};
+
+const CertText: React.FC<SVGProps> = ({ SVGText }) => {
+  return (
+    <svg
+      viewBox="0 0 6900 5209"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`absolute top-0 left-0`}
+    >
+      <text
+        fill="black"
+        xmlSpace="preserve"
+        style={{ whiteSpace: "pre" }}
+        fontFamily="Lucida Calligraphy"
+        fontSize="68"
+        fontWeight="bold"
+        fontStyle="italic" 
+        letterSpacing="-0.006em"
+      >
+        <tspan x="2190.08" y="3548.17">Awarded this {SVGText} in the year of our Lord Two Thousand Twenty-Five.&#10;</tspan><tspan x="2490.14" y="3628.17">Given at the ARMEDSAFE Safety &#38; Rescue Training Center,&#10;</tspan><tspan x="2353.61" y="3708.17">2A Wellgoco Bldg., Instruccion Street, Espana Avenue, Sampaloc Manila&#10;</tspan><tspan x="3434.92" y="3788.17">&#xa0;</tspan>
+      </text>
+    </svg>
+  );
+};
+
+const LCNCertNumber: React.FC<SVGProps> = ({ SVGText }) => {
+  return (
+    <svg
+      viewBox="0 0 6900 5209"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`absolute top-0 left-0`}
+    >
+      <text
+        fill="black"
+        xmlSpace="preserve"
+        style={{ whiteSpace: "pre" }}
+        fontFamily="AriaCalibril"
+        fontSize="116"
+        fontWeight="bold"
+        letterSpacing="0em"
+      >
+        <tspan x="1413" y="4413">
+          {SVGText}
+        </tspan>
+      </text>
+    </svg>
+  );
+};
+
+const CertImageOne: React.FC<SVGProps> = ({ SVGText, Batch }) => {
+  return (
+    <svg
+      viewBox="0 0 6900 5209"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      className={`absolute top-0 left-0`}
+    >
+    <rect x="268" y="1487" width="1202" height="1250" fill="url(#pattern0_81_66)"/>
+    <defs>
+    <pattern id="pattern0_81_66" patternContentUnits="objectBoundingBox" width="1" height="1">
+    <use xlinkHref="#image0_81_66" transform="matrix(0.00406224 0 0 0.00390625 -0.0199667 0)"/>
+    </pattern>
+    <image id="image0_81_66" width="256" height="256" preserveAspectRatio="none" 
+          href={`/assets/img/ID/${Batch}/${SVGText}.png`}
+        />
+      </defs>
+    </svg>
+  );
+};
+
+const CertImageTwo: React.FC<SVGProps> = ({ SVGText, Batch }) => {
+  return (
+    <svg
+      viewBox="0 0 6900 5209"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      className={`absolute top-0 left-0`}
+    >
+    <rect x="5057" y="3384" width="1650" height="1716" fill="url(#pattern0_81_66)" fillOpacity="0.3"/>
+    <defs>
+    <pattern id="pattern0_81_66" patternContentUnits="objectBoundingBox" width="1" height="1">
+    <use xlinkHref="#image0_81_66" transform="matrix(0.0040625 0 0 0.00390625 -0.02 0)"/>
+    </pattern>
+    <image id="image0_81_66" width="256" height="256" preserveAspectRatio="none" 
+          href={`/assets/img/ID/${Batch}/${SVGText}.png`}
+        />
+      </defs>
+    </svg>
+  );
+};
+
 export default function LcnViewer({
   lcn,
   lcnData,
@@ -356,6 +477,16 @@ export default function LcnViewer({
                             }`}
                           />
                         ))}
+                        <EMTCertName SVGText={lcnData.name} />
+                        <CertText SVGText={lcnData.issued} />
+                        <LCNCertNumber SVGText={lcnData.lcn} />
+                        <CertImageOne
+                          SVGText={lcnData.lcn}
+                          Batch={lcnData.batch} />
+                        <CertImageTwo
+                          SVGText={lcnData.lcn}
+                          Batch={lcnData.batch} />
+
                         <Image
                           src={CERT23}
                           alt={`Layer 23`}
