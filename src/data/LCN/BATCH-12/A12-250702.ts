@@ -3,7 +3,7 @@ const lcnData = {
   name: "QUINN LIANNE I. CUEVAS",
   issued: "July 05, 2025",
   expiration: "July 05, 2026",
-  registration: "Latest Registration Date",
+  registration: "July 05, 2025",
   FWE: "9.4",
   SJE: "13.8",
   EP: "9.8",
