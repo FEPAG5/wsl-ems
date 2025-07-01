@@ -3,13 +3,13 @@ const lcnData = {
   name: "CRISLY A. REYES",
   issued: "July 05, 2025",
   expiration: "July 05, 2026",
-  registration: "Latest Registration Date",
+  registration: "July 05, 2025",
   FWE: "5.6",
   SJE: "12",
   EP: "7.9",
-  PAS: "18.5",
-  CCST: "15.5",
-  CCSM: "15.5",
+  PAS: "11.9",
+  CCST: "18.9",
+  CCSM: "18.7",
   batch: "BATCH-12",
   ranking: "0"
 }
