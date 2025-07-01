@@ -223,7 +223,7 @@ const EMTName: React.FC<SVGProps> = ({ SVGText }) => {
       viewBox="0 0 3450 2210"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`absolute top-0 left-0`}
+      className="absolute top-0 left-0"
     >
       <text
         fill="black"
@@ -233,14 +233,16 @@ const EMTName: React.FC<SVGProps> = ({ SVGText }) => {
         fontSize={fontSize}
         fontWeight="bold"
         letterSpacing="0em"
+        textAnchor="middle"
       >
-        <tspan x="1425" y="1080.89">
+        <tspan x="2200" y="1080.89">  {/* 1725 is center of 3450 width */}
           {upperText}
         </tspan>
       </text>
     </svg>
   );
 };
+
 
 const EMTImage: React.FC<SVGProps> = ({ SVGText, Batch }) => {
   return (
@@ -288,10 +290,10 @@ const EMTCertName: React.FC<SVGProps> = ({ SVGText }) => {
 
   return (
     <svg 
-        viewBox="0 0 6900 5209" 
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className={`absolute top-0 left-0`}
+      viewBox="0 0 6900 5209" 
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="absolute top-0 left-0"
     >
       <text
         fill="black"
@@ -301,14 +303,16 @@ const EMTCertName: React.FC<SVGProps> = ({ SVGText }) => {
         fontSize={fontSize}
         fontWeight="bold"
         letterSpacing="0em"
+        textAnchor="middle" // center the text
       >
-        <tspan x="1848" y="2252.03">
+        <tspan x="3450" y="2252.03">  {/* 3450 is center of 6900 width */}
           {upperText}
         </tspan>
       </text>
     </svg>
   );
 };
+
 
 const CertText: React.FC<SVGProps> = ({ SVGText }) => {
   return (
@@ -465,7 +469,7 @@ export default function LcnViewer({
                   </DialogTrigger>
                   <DialogContent className="select-none">
                     <DialogHeader>
-                      <DialogTitle>Certificate</DialogTitle>
+                      <DialogTitle>Certificate of Completion</DialogTitle>
                       <DialogDescription className="relative w-full h-auto">
                         {certificateLayers.map((layer, i) => (
                           <Image
@@ -492,6 +496,7 @@ export default function LcnViewer({
                           alt={`Layer 23`}
                           className={`absolute top-0 left-0`}
                         />
+                        <span className="text-xs">This certificate is issued for digital use only. It is not valid unless printed with the authorized signature and official seal of the issuing institution.</span>
                       </DialogDescription>
                     </DialogHeader>
                   </DialogContent>
@@ -528,6 +533,7 @@ export default function LcnViewer({
                           alt={`Layer 22`}
                           className={`absolute top-0 left-0`}
                         />
+                        <span className="text-xs">This license card is issued for digital use only. It is not valid unless printed with the authorized signature and official seal of the issuing institution.</span>
                       </DialogDescription>
                     </DialogHeader>
                   </DialogContent>
