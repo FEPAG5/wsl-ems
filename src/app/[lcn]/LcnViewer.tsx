@@ -16,7 +16,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import Certificate from "@/assets/svg/Certificate.svg";
+
 import Image from "next/image";
 
 import ID0 from "@/assets/svg/License/0.svg";
@@ -43,6 +43,31 @@ import ID20 from "@/assets/svg/License/20.svg";
 import ID21 from "@/assets/svg/License/21.svg";
 import ID22 from "@/assets/svg/License/22.svg";
 
+import CERT0 from "@/assets/svg/Certificate/0.svg";
+import CERT1 from "@/assets/svg/Certificate/1.svg";
+import CERT2 from "@/assets/svg/Certificate/2.svg";
+import CERT3 from "@/assets/svg/Certificate/3.svg";
+import CERT4 from "@/assets/svg/Certificate/4.svg";
+import CERT5 from "@/assets/svg/Certificate/5.svg";
+import CERT6 from "@/assets/svg/Certificate/6.svg";
+import CERT7 from "@/assets/svg/Certificate/7.svg";
+import CERT8 from "@/assets/svg/Certificate/8.svg";
+import CERT9 from "@/assets/svg/Certificate/9.svg";
+import CERT10 from "@/assets/svg/Certificate/10.svg";
+import CERT11 from "@/assets/svg/Certificate/11.svg";
+import CERT12 from "@/assets/svg/Certificate/12.svg";
+import CERT13 from "@/assets/svg/Certificate/13.svg";
+import CERT14 from "@/assets/svg/Certificate/14.svg";
+import CERT15 from "@/assets/svg/Certificate/15.svg";
+import CERT16 from "@/assets/svg/Certificate/16.svg";
+import CERT17 from "@/assets/svg/Certificate/17.svg";
+import CERT18 from "@/assets/svg/Certificate/18.svg";
+import CERT19 from "@/assets/svg/Certificate/19.svg";
+import CERT20 from "@/assets/svg/Certificate/20.svg";
+import CERT21 from "@/assets/svg/Certificate/21.svg";
+import CERT22 from "@/assets/svg/Certificate/22.svg";
+import CERT23 from "@/assets/svg/Certificate/23.svg";
+
 const licenseLayers = [
   ID0,
   ID1,
@@ -66,6 +91,32 @@ const licenseLayers = [
   ID19,
   ID20,
   ID21,
+];
+
+const certificateLayers = [
+  CERT0,
+  CERT1,
+  CERT2,
+  CERT3,
+  CERT4,
+  CERT5,
+  CERT6,
+  CERT7,
+  CERT8,
+  CERT9,
+  CERT10,
+  CERT11,
+  CERT12,
+  CERT13,
+  CERT14,
+  CERT15,
+  CERT16,
+  CERT17,
+  CERT18,
+  CERT19,
+  CERT20,
+  CERT21,
+  CERT22,
 ];
 
 type LcnData = {
@@ -294,11 +345,21 @@ export default function LcnViewer({
                   <DialogContent className="select-none">
                     <DialogHeader>
                       <DialogTitle>Certificate</DialogTitle>
-                      <DialogDescription>
+                      <DialogDescription className="relative w-full h-auto">
+                        {certificateLayers.map((layer, i) => (
+                          <Image
+                            key={i}
+                            src={layer}
+                            alt={`Layer ${i}`}
+                            className={`absolute top-0 left-0 ${
+                              i === 0 ? "relative" : ""
+                            }`}
+                          />
+                        ))}
                         <Image
-                          src={Certificate}
-                          alt="Certificate"
-                          draggable={false}
+                          src={CERT23}
+                          alt={`Layer 23`}
+                          className={`absolute top-0 left-0`}
                         />
                       </DialogDescription>
                     </DialogHeader>
