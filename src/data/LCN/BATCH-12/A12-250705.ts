@@ -3,7 +3,7 @@ const lcnData = {
   name: "TROMAS P. ZEPEDA JR.",
   issued: "July 05, 2025",
   expiration: "July 05, 2026",
-  registration: "Latest Registration Date",
+  registration: "July 05, 2025",
   FWE: "5.5",
   SJE: "11",
   EP: "08",
