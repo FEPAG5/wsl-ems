@@ -1,5 +1,5 @@
 const lcnData = {
-  lcn: "A05-210902",
+  lcn: "A05-210802",
   name: "dandelo F. Gomez",
   issued: "Sept 12, 2021",
   expiration: "Sept 12, 2026",
