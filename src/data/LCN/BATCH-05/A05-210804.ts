@@ -1,9 +1,9 @@
 const lcnData = {
   lcn: "A05-210804",
   name: "Richard Labbao",
-  issued: "Sept 12, 2021",
-  expiration: "Sept 12, 2022",
-  registration: "Sept 12, 2021",
+  issued: "August 03, 2021",
+  expiration: "August 03, 2022",
+  registration: "August 03, 2021",
   FWE: "00",
   SJE: "00",
   EP: "00",
