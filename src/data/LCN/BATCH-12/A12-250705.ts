@@ -1,6 +1,6 @@
 const lcnData = {
   lcn: "A12-250705",
-  name: "TROMAS P. ZEPEDA JR.",
+  name: "TOMAS P. ZEPEDA JR.",
   issued: "July 05, 2025",
   expiration: "July 05, 2026",
   registration: "July 05, 2025",
