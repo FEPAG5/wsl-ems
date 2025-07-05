@@ -1,6 +1,6 @@
 const lcnData = {
   lcn: "A12-250701",
-  name: "LEA MAY B. CORTEZ",
+  name: "LEA MAY E. CORTEZ",
   issued: "July 05, 2025",
   expiration: "July 05, 2026",
   registration: "July 05, 2025",
