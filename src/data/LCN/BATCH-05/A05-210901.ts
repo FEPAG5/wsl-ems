@@ -1,5 +1,5 @@
 const lcnData = {
-  lcn: "A05-210901",
+  lcn: "A05-210801",
   name: "Eugenio L. Salvador",
   issued: "Sept 12, 2021",
   expiration: "Sept 12, 2026",
