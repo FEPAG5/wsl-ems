@@ -1,5 +1,5 @@
 const lcnData = {
-  lcn: "A05-210904",
+  lcn: "A05-210804",
   name: "Richard Labbao",
   issued: "Sept 12, 2021",
   expiration: "Sept 12, 2022",
