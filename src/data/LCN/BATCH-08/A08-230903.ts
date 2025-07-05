@@ -2,7 +2,7 @@ const lcnData = {
   lcn: "A08-230903",
   name: "Erwin F. Padrigo",
   issued: "Sept 03, 2023",
-  expiration: "Sept 03, 2025",
+  expiration: "Sept 03, 2026",
   registration: "Sept 03, 2023",
   FWE: "7",
   SJE: "13",
