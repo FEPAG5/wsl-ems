@@ -1,9 +1,9 @@
 const lcnData = {
   lcn: "A05-210807",
   name: "Maria Cecilia R. Tirol",
-  issued: "Sept 12, 2021",
-  expiration: "Sept 12, 2026",
-  registration: "Sept 12, 2021",
+  issued: "August 03, 2021",
+  expiration: "August 03, 2026",
+  registration: "August 03, 2021",
   FWE: "00",
   SJE: "00",
   EP: "00",
