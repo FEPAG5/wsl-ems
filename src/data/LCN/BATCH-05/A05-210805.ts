@@ -1,9 +1,9 @@
 const lcnData = {
   lcn: "A05-210805",
   name: "Maria Carmen Inocencia E. Lapuz",
-  issued: "Sept 12, 2021",
-  expiration: "Sept 12, 2026",
-  registration: "Sept 12, 2021",
+  issued: "August 03, 2021",
+  expiration: "August 03, 2026",
+  registration: "August 03, 2021",
   FWE: "00",
   SJE: "00",
   EP: "00",
