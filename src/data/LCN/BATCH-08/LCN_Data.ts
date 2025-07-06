@@ -1,6 +1,17 @@
-// data/LCN/BATCH-02/LCN_Data.ts
-const validLCNs = [
-  "TEMPLATE-08",
-];
+const lcnData = {
+  lcn: "TEMPLATE-13",
+  name: "Legal Name",
+  issued: "Issued Date",
+  expiration: "Expiry Date",
+  registration: "Latest Registration Date",
+  FWE: "00",
+  SJE: "00",
+  EP: "00",
+  PAS: "00",
+  CCST: "00",
+  CCSM: "00",
+  batch: "BATCH-13",
+  ranking: "0"
+}
 
-export default validLCNs;
+export default lcnData
