@@ -1,4 +1,4 @@
-// data/LCN/BATCH-02/LCN_Data.ts
+// data/LCN/BATCH-08/LCN_Data.ts
 const validLCNs = [
   "A08-230901",
   "A08-230902",
