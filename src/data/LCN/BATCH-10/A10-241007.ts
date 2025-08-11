@@ -5,11 +5,11 @@ const lcnData = {
   expiration: "Oct 26, 2025",
   registration: "Oct 26, 2024",
   FWE: "8",
-  SJE: "12",
-  EP: "8.5",
-  PAS: "8",
-  CCST: "17.5",
-  CCSM: "17.5",
+  SJE: "12.8",
+  EP: "8.7",
+  PAS: "8.5",
+  CCST: "18.5",
+  CCSM: "18.5",
   batch: "BATCH-10",
   ranking: "0"
 }
