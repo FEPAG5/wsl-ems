@@ -8,7 +8,7 @@ const lcnData = {
   SJE: "12",
   EP: "8.5",
   PAS: "8",
-  CCST: "12.5",
+  CCST: "17.5",
   CCSM: "17.5",
   batch: "BATCH-10",
   ranking: "0"
