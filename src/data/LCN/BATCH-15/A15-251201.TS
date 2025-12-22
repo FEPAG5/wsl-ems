@@ -1,5 +1,5 @@
 const lcnData = {
-  lcn: "A15251201",
+  lcn: "A15-251201",
   name: "John Patrick D. Mamaclay",
   issued: "Dec 27, 2025",
   expiration: "Dec 27, 2026",
