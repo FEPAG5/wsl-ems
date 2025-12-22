@@ -1,17 +1,17 @@
 const lcnData = {
-  lcn: "TEMPLATE-15",
-  name: "Legal Name",
-  issued: "Issued Date",
-  expiration: "Expiry Date",
-  registration: "Latest Registration Date",
-  FWE: "00",
-  SJE: "00",
-  EP: "00",
-  PAS: "00",
-  CCST: "00",
-  CCSM: "00",
+  lcn: "A15251201",
+  name: "John Patrick D. Mamaclay",
+  issued: "Dec 27, 2025",
+  expiration: "Dec 27, 2026",
+  registration: "Dec 27, 2025",
+  FWE: "10",
+  SJE: "10",
+  EP: "10",
+  PAS: "10",
+  CCST: "25",
+  CCSM: "25",
   batch: "BATCH-15",
-  ranking: "0"
+  ranking: "1"
 }
 
 export default lcnData
