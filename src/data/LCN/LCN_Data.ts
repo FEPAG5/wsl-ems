@@ -15,11 +15,11 @@ import Data13 from "@/data/LCN/BATCH-13/LCN_Data";
 import Data14 from "@/data/LCN/BATCH-14/LCN_Data";
 import Data15 from "@/data/LCN/BATCH-15/LCN_Data";
 import Data16 from "@/data/LCN/BATCH-16/LCN_Data";
-import Data16 from "@/data/LCN/BATCH-17/LCN_Data";
-import Data16 from "@/data/LCN/BATCH-18/LCN_Data";
-import Data16 from "@/data/LCN/BATCH-19/LCN_Data";
-import Data16 from "@/data/LCN/BATCH-20/LCN_Data";
-import Data16 from "@/data/LCN/BATCH-21/LCN_Data";
+import Data17 from "@/data/LCN/BATCH-17/LCN_Data";
+import Data18 from "@/data/LCN/BATCH-18/LCN_Data";
+import Data19 from "@/data/LCN/BATCH-19/LCN_Data";
+import Data20 from "@/data/LCN/BATCH-20/LCN_Data";
+import Data21 from "@/data/LCN/BATCH-21/LCN_Data";
 
 // ADD NEW BATCHES HERE USING => import DataXX from "@/data/LCN/BATCH-XX/LCN_Data";
 
