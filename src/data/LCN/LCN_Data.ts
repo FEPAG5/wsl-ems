@@ -19,7 +19,6 @@ import Data17 from "@/data/LCN/BATCH-17/LCN_Data";
 import Data18 from "@/data/LCN/BATCH-18/LCN_Data";
 import Data19 from "@/data/LCN/BATCH-19/LCN_Data";
 import Data20 from "@/data/LCN/BATCH-20/LCN_Data";
-import Data21 from "@/data/LCN/BATCH-21/LCN_Data";
 
 // ADD NEW BATCHES HERE USING => import DataXX from "@/data/LCN/BATCH-XX/LCN_Data";
 
@@ -48,7 +47,6 @@ const sources: { batch: string; data: string[] }[] = [
   { batch: 'BATCH-18', data: Data18 },
   { batch: 'BATCH-19', data: Data19 },
   { batch: 'BATCH-20', data: Data20 },
-  { batch: 'BATCH-21', data: Data21 },
   // ADD NEW BATCHES HERE USING => { batch: 'BATCH-XX', data: DataXX },
 
 
