@@ -1,8 +1,8 @@
 const lcnData = {
   lcn: "A10-241007",
   name: "Jhon Edward S. Fermanes",
-  issued: "Oct 26, 2024",
-  expiration: "Oct 26, 2025",
+  issued: "Oct 26, 2025",
+  expiration: "Oct 26, 2026",
   registration: "Oct 26, 2024",
   FWE: "8",
   SJE: "12.8",
