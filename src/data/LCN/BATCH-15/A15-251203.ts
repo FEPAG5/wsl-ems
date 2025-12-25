@@ -1,9 +1,9 @@
 const lcnData = {
   lcn: "A15-251203",
   name: "<isalea C. Barroga, RN",
-  issued: "December 27, 2025",
-  expiration: "December 27, 2026",
-  registration: "December 27, 2025",
+  issued: "Dec 27, 2025",
+  expiration: "Dec 27, 2026",
+  registration: "Dec 27, 2025",
   FWE: "6",
   SJE: "11.1",
   EP: "6.8",
