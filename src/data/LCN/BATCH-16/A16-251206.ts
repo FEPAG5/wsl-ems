@@ -1,5 +1,5 @@
 const lcnData = {
-  lcn: "TEMPLATE-15",
+  lcn: "A16-251206",
   name: "Efren Miguell A. Balmeo, RN",
   issued: "December 26, 2025",
   expiration: "December 26, 2026",
