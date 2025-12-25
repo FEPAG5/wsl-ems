@@ -1,5 +1,5 @@
 const lcnData = {
-  lcn: "TEMPLATE-15",
+  lcn: "A16-251204",
   name: "Kimwill Darrel B. Pergis, RN",
   issued: "December 26, 2025",
   expiration: "December 26, 2026",
