@@ -1,9 +1,9 @@
 const lcnData = {
   lcn: "A15-251205",
   name: "Ceasar Magbanua Columna",
-  issued: "December 27, 2025",
-  expiration: "December 27, 2026",
-  registration: "December 27, 2025",
+  issued: "Dec 27, 2025",
+  expiration: "Dec 27, 2026",
+  registration: "Dec 27, 2025",
   FWE: "5",
   SJE: "9.3",
   EP: "6",
