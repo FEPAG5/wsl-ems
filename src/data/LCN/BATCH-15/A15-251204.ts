@@ -1,5 +1,5 @@
 const lcnData = {
-  lcn: "TEMPLATE-15",
+  lcn: "A15-251204",
   name: "Angelica M. Villanobos, BSN",
   issued: "December 27, 2025",
   expiration: "December 27, 2026",
