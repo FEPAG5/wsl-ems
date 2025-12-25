@@ -1,5 +1,5 @@
 const lcnData = {
-  lcn: "TEMPLATE-15",
+  lcn: "A16-251201",
   name: "Winona Kate A. Tumlos, RN",
   issued: "December 26, 2025",
   expiration: "December 26, 2026",
