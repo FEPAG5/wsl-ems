@@ -1,9 +1,9 @@
 const lcnData = {
   lcn: "A15-251206",
   name: "Catherine S. Sembrano",
-  issued: "December 27, 2025",
-  expiration: "December 27, 2026",
-  registration: "December 27, 2025",
+  issued: "Dec 27, 2025",
+  expiration: "Dec 27, 2026",
+  registration: "Dec 27, 2025",
   FWE: "4.8",
   SJE: "9.7",
   EP: "4.9",
