@@ -1,9 +1,9 @@
 const lcnData = {
   lcn: "A15-251202",
   name: "Kurt Agunday",
-  issued: "December 27, 2025",
-  expiration: "Decemeber 27, 2026",
-  registration: "December 27, 2025",
+  issued: "Dec 27, 2025",
+  expiration: "Dec 27, 2026",
+  registration: "Dec 27, 2025",
   FWE: "6",
   SJE: "11.3",
   EP: "8",
