@@ -1,6 +1,6 @@
 const lcnData = {
   lcn: "A15-251203",
-  name: "<isalea C. Barroga, RN",
+  name: "Misalea C. Barroga, RN",
   issued: "Dec 27, 2025",
   expiration: "Dec 27, 2026",
   registration: "Dec 27, 2025",
